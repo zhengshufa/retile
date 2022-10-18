@@ -48,4 +48,9 @@ public class IChapterInterImpl implements IChapterInter {
             throw new RuntimeException(e);
         }
     }
+
+    public static void main(String[] args) {
+        String s = "/D:/workspace/device-control/target/classes/com/device/control/lang/utils/sdk/haikang/";
+        System.out.println(s.replaceFirst("/",""));
+    }
 }
