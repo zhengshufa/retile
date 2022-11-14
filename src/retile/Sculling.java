@@ -1,44 +1,42 @@
 package retile;
 
-import com.sun.xml.internal.ws.util.StringUtils;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
-import java.io.IOException;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+
 import java.util.Scanner;
-import com.alibaba.fastjson.JSON;
+
 
 public class Sculling {
 
-    static List<String> urlList = new ArrayList<String>();
 
     //101.34.13.141 11000
-    static String baseUrl = "https://www.biqusa.org";
+//    static String baseUrl = "https://www.biqusa.org";
+
+    static String baseUrl = "";
+
+
+
 
     static String serverIp = "http://101.34.13.141:11000";
 
     public static void main(String[] args) throws Exception {
-        String params = URLEncoder.encode(baseUrl + "/147_147499/");
+        String params = URLEncoder.encode(baseUrl + "/133_133715/");
         String res = HttpUtils.getHttpRequestData(serverIp+"/list","req="+RSAUtils.encryptByPublicKey(params));
         System.out.println(RSAUtils.decryptByPrivateKey(res));
         Scanner scanner = new Scanner(System.in);
+
         int index = 0;
         while (true){
            String text = scanner.nextLine();
            if(isNum(text) ){
-               index = Integer.valueOf(text);
+               index = Integer.parseInt(text);
                printOut(index);
            }else if("exit".equals(text)){
                break;
            }else{
                index ++;
-
+               System.out.println("index:" + index);
+               printOut(index);
            }
         }
     }
@@ -57,7 +55,6 @@ public class Sculling {
 //        }else{
 //            System.out.println(map.get("data"));
 //        }
-
     }
 
     public static boolean isNum(String text){
@@ -68,4 +65,7 @@ public class Sculling {
             return false;
         }
     }
+
+
+
 }
