@@ -83,6 +83,10 @@ public class TcpZhiQianCommunicationUtil {
         c.put("a","c");
         c.put("b","c");
         c.put("c","c");
+        Map<String,String> d = new HashMap<>();
+        c.put("a","c");
+        c.put("b","c");
+        c.put("c","c");
 
 
         List<Map<String,String>> ds = new ArrayList<>();
