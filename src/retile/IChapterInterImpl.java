@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @description Created by jwing on 2018/2/5.
+ * @desc Created by jwing on 2018/2/5.
  */
 public class IChapterInterImpl implements IChapterInter {
 

@@ -17,14 +17,13 @@ public class Sculling {
 
 
 
-    static String serverIp = "http://101.34.13.141:11000";
+    static String serverIp = "http://1.15.225.62:11000";
 
     public static void main(String[] args) throws Exception {
-        String params = URLEncoder.encode(baseUrl + "/133_133715/");
+        String params = URLEncoder.encode(baseUrl + "/86_86838/");
         String res = HttpUtils.getHttpRequestData(serverIp+"/list","req="+RSAUtils.encryptByPublicKey(params));
         System.out.println(RSAUtils.decryptByPrivateKey(res));
         Scanner scanner = new Scanner(System.in);
-
         int index = 0;
         while (true){
            String text = scanner.nextLine();
@@ -40,7 +39,6 @@ public class Sculling {
            }
         }
     }
-
     public static void printOut(int index) throws Exception {
         String params = "size=" + index;
         String res = HttpUtils.getHttpRequestData(serverIp+"/sculling",params);

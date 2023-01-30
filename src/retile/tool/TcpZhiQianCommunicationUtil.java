@@ -79,14 +79,17 @@ public class TcpZhiQianCommunicationUtil {
         b.put("a","c");
         b.put("b","c");
         b.put("c","c");
+
         Map<String,String> c = new HashMap<>();
         c.put("a","c");
         c.put("b","c");
         c.put("c","c");
+
         Map<String,String> d = new HashMap<>();
         c.put("a","c");
         c.put("b","c");
         c.put("c","c");
+
         Map<String,String> e = new HashMap<>();
         c.put("a","c");
         c.put("b","c");
