@@ -21,7 +21,9 @@ public class Search {
     public static void main(String[] args) {
         try{
             search();
-//            menuList();
+//            menuList("6854397012708690947");
+
+            //        "7114257585896688671"
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -29,14 +31,13 @@ public class Search {
     }
 
     public static void search() throws Exception {
-        String params = URLEncoder.encode("天灾");
-        String res = HttpUtils.getHttpRequestData(serverIp+"/search","name="+params);
+        String params = URLEncoder.encode("夜的命名术");
+        String res = HttpUtils.getHttpRequestData(serverIp+"/search","name="+params + "&page="+0);
         System.out.println(RSAUtils.decryptByPrivateKey(res));
     }
 
-    public static void menuList() throws Exception {
-        String params = URLEncoder.encode("/bookId/");
-        String res = HttpUtils.getHttpRequestData(serverIp+"/list5","req="+RSAUtils.encryptByPublicKey(params));
+    public static void menuList(String bookId) throws Exception {
+        String res = HttpUtils.getHttpRequestData(serverIp+"/list5","req="+RSAUtils.encryptByPublicKey(bookId));
         System.out.println(RSAUtils.decryptByPrivateKey(res));
         Scanner scanner = new Scanner(System.in);
         int index = 0;
@@ -44,15 +45,17 @@ public class Search {
             String text = scanner.nextLine();
             if(isNum(text) ){
                 index = Integer.parseInt(text);
-                printOut(index,"bookId");
+                printOut(index,bookId);
             }else if("exit".equals(text)){
                 break;
             }else{
                 index ++;
                 System.out.println("index:" + index);
-                printOut(index,"bookId");
+                printOut(index,bookId);
             }
         }
+
+
     }
 
     public static void printOut(int index,String bookId) throws Exception {

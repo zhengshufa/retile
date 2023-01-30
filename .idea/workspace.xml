@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79ee3228-196a-41c6-bc1f-3afadb77c85b" name="Default" comment="test1">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Retile.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/retile/IChapterInterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/retile/IChapterInterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/retile/MD5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/retile/MD5Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/retile/Sculling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/retile/Sculling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/retile/tool/TcpZhiQianCommunicationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/retile/tool/TcpZhiQianCommunicationUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/retile/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/retile/Search.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +173,7 @@
       <recent name="retile" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.retile.Sculling">
+  <component name="RunManager" selected="Application.Search">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -477,8 +471,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.retile.Sculling" />
         <item itemvalue="Application.Search" />
+        <item itemvalue="Application.retile.Sculling" />
         <item itemvalue="Application.TcpZhiQianCommunicationUtil" />
         <item itemvalue="Application.retile.Retile" />
         <item itemvalue="Application.retile.IChapterInterImpl" />
@@ -744,7 +738,7 @@
       <workItem from="1673572005851" duration="1185000" />
       <workItem from="1673658629495" duration="2393000" />
       <workItem from="1674868078056" duration="6528000" />
-      <workItem from="1675040905639" duration="1512000" />
+      <workItem from="1675040905639" duration="13946000" />
     </task>
     <task id="LOCAL-00001" summary="test1">
       <created>1670809165479</created>
