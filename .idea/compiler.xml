@@ -9,8 +9,5 @@
         <module name="Retile" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Retile" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>
